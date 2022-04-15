@@ -1,0 +1,348 @@
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5%;
+}
+h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px #B100B2;
+}
+p {
+    text-align: justify !important; 
+}
+body {
+    max-width: 80vw;
+    margin: auto;
+    margin-top:40px;
+}
+html {
+    background: url(images/Background.jpg);
+}
+
+button {
+    transition: background-color 250ms ease;
+    max-width: 15vw;
+    min-width: 120px;
+    background-color: #6C0078;
+    justify-self: center;
+}
+button:hover {
+    background-color: #B100B2;
+}
+#digipics {
+    background-image: url(Images/DigiArt1.jpg);
+    animation-name: digiAnimation;
+}
+
+#timeMngmtPics {
+    background-image: url(Images/TimeManage0.jpg);
+    animation-name: timeMngmtAnimation;
+}
+
+#personalPics {
+    display: inline-block;
+    background-image: url(Images/Personal1.jpg);
+    background-size:cover;
+    animation-name: personalAnimation;
+    height: 500px;
+    width: 400px;
+}
+
+#home img {
+    display: grid;
+    width:400px;
+    padding-bottom: 50px;
+    margin:auto;
+}
+
+#expertiseDiv {
+    display: grid;
+    grid-template-rows: 500px 500px 500px 500px;
+    grid-row-gap: 10vh;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#transparentBg{
+    background-color: rgba(56,2,86,0.5);
+}
+#hobbies {
+    min-height: 100vh;
+}
+#home {
+    width: 600px;
+    display: block;
+    position:absolute;
+    margin-left:-300px;
+    left: 50%;
+}
+#toolbar {
+    z-index: 2;
+    left:0px;
+    top:0px;
+    position:absolute;
+    width: 100vw;
+    background-color:#380256;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#basicProg {
+    background-image: url(Images/Prog1.PNG);
+}
+#earlyProg {
+    background-image: url(Images/War3.jpg);
+}
+#footbar{
+    width: 100vw;
+    left:0px;
+    position:absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:#380256;
+}
+#toolbar div {
+    width: 80vw;
+    left:50%;
+    margin:auto;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+}
+.dropdownEffect {
+    z-index: 1;
+    display:block;
+    position:absolute;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+    opacity:0px;
+    transform: translateY(-1000%);  
+}
+
+.galleryAnimation {
+    border-radius: 5%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s; 
+}
+
+
+.font {
+    padding:10px;
+    color: #94009C;
+    font-family: sans-serif;
+    text-align: center;
+}
+.layout1 {
+    display:grid;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    margin-right:50px;
+    grid-template-columns: 50% 50%;
+}
+.layoutItem2 {
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius:5%;
+}
+.gallery {
+    align-items: center;
+    text-align: center;
+}
+.gallery h3 {
+    transition: font-size 250ms ease;
+    display: inline-block;
+}
+.gallery img{
+    height: 400px;
+    width: 250px;
+}
+
+.gallery h3:hover {
+    font-size: 25px;
+}
+
+.personalBlock {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalBlock img{
+    width: 400px;
+    height: 550px;
+    display: inline-block;
+}
+
+.personalBlock ul {
+    display:inline-block;
+}
+
+.personalBlock li {
+    text-align:left;
+}
+.personalBlock h1l {
+    width: 100%;
+}
+.transform {
+    transform: translateY(0px) !important;
+    position: relative !important;
+}
+@media only screen and (max-width:1000px) {
+    /* For tablets: */
+    #expertiseDiv {
+        grid-template-rows: 80vh 80vh 80vh 80vh;
+    }
+    body {
+        max-width: 100vw;
+    }
+    img {
+        width: 75%;
+    }   
+    .layoutItem1 {
+        grid-area:item1;
+    }
+
+    .layoutItem2 {
+        grid-area:item2;
+        min-width:60vw;
+    }
+    .layout1 {
+        justify-items: center;
+        grid-template-columns:none;
+        grid-template-rows: 25% 75%;
+        grid-template-areas: 
+            "item1"
+            "item2";
+    }
+}
+
+@keyframes digiAnimation {
+    0% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    24.5% {
+        background-image: url(Images/DigiArt1.jpg);
+        opacity:0;
+    }
+    25% {
+        background-image: url(Images/DigiArt2.jpg);
+        opacity:1;
+    }
+    49% {
+        opacity:1;
+    }  
+    49.5% {
+        background-image: url(Images/DigiArt2.jpg);
+        opacity:0;
+    }  
+    50% {
+        opacity:1;
+        background-image: url(Images/DigiArt3.jpg);
+    }  
+    74% {
+        opacity:1;  
+    }
+    74.5% {
+        opacity:0;
+        background-image: url(Images/DigiArt3.jpg);
+    }
+    75% {
+        background-image: url(Images/DigiArt4.png);
+        opacity:1;
+    }
+    99% {
+        opacity:1;
+    }
+    99.5% {
+        opacity:0;
+        background-image: url(Images/DigiArt4.png);
+    }
+    100% {
+        background-image: url(Images/DigiArt1.jpg);
+        opacity: 1;
+    }
+}
+@keyframes timeMngmtAnimation {
+    0% {
+        opacity:1;
+    }
+    32% {
+        opacity:1;
+    }
+    33% {
+        background-image: url(Images/TimeManage0.jpg);
+        opacity:0;
+    }
+    33.3% {
+        background-image: url(Images/TimeManage1.jpg);
+        opacity:1;
+    }
+    65% {
+        opacity:1;
+    }  
+    66% {
+        background-image: url(Images/TimeManage1.jpg);
+        opacity:0;
+    }  
+    66.6% {
+        opacity:1;
+        background-image: url(Images/TimeManage2.jpg);
+    }  
+    99% {
+        opacity:1;
+    }
+    99.5% {
+        opacity:0;
+        background-image: url(Images/TimeManage2.jpg);
+    }
+    100% {
+        background-image: url(Images/TimeManage0.jpg);
+        opacity: 1;
+    }
+}
+@keyframes personalAnimation {
+    0% {
+        opacity:1;
+    }
+    32% {
+        opacity:1;
+    }
+    33% {
+        background-image: url(Images/Personal1.jpg);
+        opacity:0;
+    }
+    33.3% {
+        background-image: url(Images/Personal2.jpg);
+        opacity:1;
+    }
+    65% {
+        opacity:1;
+    }  
+    66% {
+        background-image: url(Images/Personal2.jpg);
+        opacity:0;
+    }  
+    66.6% {
+        opacity:1;
+        background-image: url(Images/Personal3.jpg);
+    }  
+    99% {
+        opacity:1;
+    }
+    99.5% {
+        opacity:0;
+        background-image: url(Images/Personal3.jpg);
+    }
+    100% {
+        background-image: url(Images/Personal1.jpg);
+        opacity: 1;
+    }
+}

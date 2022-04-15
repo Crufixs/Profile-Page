@@ -1,0 +1,145 @@
+<!DOCTYPE html/> 
+
+<html>
+	<head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="MP3.css" />
+        <div id="toolbar">
+            <div>
+                <button type="button" onclick="home()">Home</button>
+                <button type="button" onclick="expertise()">Expertise</button>
+                <button type="button" onclick="personal()">Personal Details</button>
+                <button type="button" onclick="hobbies()">Hobbies</button>
+            </div>
+        </div>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+            function home() {
+                setTimeout(function() {
+                    $('#home').addClass('transform');
+                    $('#expertise').removeClass('transform');
+                    $('#personal').removeClass('transform');
+                    $('#hobbies').removeClass('transform');
+                });
+            }
+            function expertise() {
+                setTimeout(function() {
+                    $('#home').removeClass('transform');
+                    $('#expertise').addClass('transform');
+                    $('#personal').removeClass('transform');
+                    $('#hobbies').removeClass('transform');
+                });
+            }
+            function personal() {
+                setTimeout(function() {
+                    $('#home').removeClass('transform');
+                    $('#expertise').removeClass('transform');
+                    $('#personal').addClass('transform');
+                    $('#hobbies').removeClass('transform');
+                });
+            }
+            function hobbies() {
+                setTimeout(function() {
+                    $('#home').removeClass('transform');
+                    $('#expertise').removeClass('transform');
+                    $('#personal').removeClass('transform');
+                    $('#hobbies').addClass('transform');
+                });
+            }
+        </script>
+	</head>     
+	<body>
+        <div id="transparentBg">
+            <div id="home" class="dropdownEffect transform">
+                <h1 class="font">My Portfolio</h1>
+                <h2 class="font"> Hi, I'm Juan Carlo Louis O. Miñano <br>Welcome to my page!</h2>
+                <img src="Images/Home.jpg">
+            </div>
+            <div id="expertise" class="dropdownEffect">
+                <h1 class="font">My Experiences</h1>
+                <div id="expertiseDiv">
+                    <div class="layout1">
+                        <div class="layoutItem1">
+                            <h2 class="font">Early Programming</h2>
+                            <p class="font"> I started my journey in Computer Science when I was young. I played Warcraft 3 back when I was around 12, and I got curious with its map editor. Although it made use of simple and prebuilt codes, this was the point in my life where my interest in programming sparked</p>
+                        </div>
+                        <div class="layoutItem2 galleryAnimation" id="earlyProg"></div> 
+                    </div>
+                    <div class="layout1">
+                        <div class="layoutItem2 galleryAnimation" id="digipics"></div>
+                        <div class="layoutItem1">
+                            <h2 class="font">Digital Artworks</h2>
+                            <p class="font">I also meedled with making digital art using an iPad or desktop. I used to make pixel art but nowadays, I've been editing images through Photoshop </p>
+                        </div>
+                    </div>
+                    <div class="layout1">          
+                        <div class="layoutItem1">
+                            <h2 class="font">Time Management Skills</h2>
+                            <p class="font">Back in SHS, I managed to commute for an average of 4 hours a day just so I can attend classes. Through those times, I have never missed a requirement, nor attended late more than once a semester because I always arrived to school on average an hour early</p>
+                        </div>
+                        <div class="layoutItem2 galleryAnimation" id="timeMngmtPics"></div>
+                    </div>
+                    <div class="layout1">
+                        <div class="layoutItem2 galleryAnimation" id="basicProg"></div>
+                        <div class="layoutItem1">
+                            <h2 class="font">Basic Understanding of Programming</h2>
+                            <p class="font">During my 1st semester, I learned how to apply programming in practical uses. As such are making GUIs, and coding algorithms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="personal" class="dropdownEffect">
+                <h1 class="font">Personal Info</h1>
+                <div class="personalBlock">
+                    <div id="personalPics" class="galleryAnimation"></div>
+                    <ul>
+                        <h2 class="font"> Facts About Me</h2>
+                        <li class="font">Birthday: September 20, 2000</li>
+                        <li class="font">Hometown: Quezon City, Manila</li>
+                        <li class="font">Father: Arlo M. Miñano</li>
+                        <li class="font">Mother: Jovita O. Miñano </li>
+                    </ul>
+                    <h3 class="font">"I'm just a simple introvert who enjoys the little things in life"</h3>
+                </div>
+                <br><br>
+                <h2 class="font">Favourite Movies</h2>
+                <div class="gallery">
+                    <h3 class="font">Hello Love Goodbye<br><img src="Images/HelloLoveGoodbye.jpg"></h3>
+                    <h3 class="font">Interstellar<br><img src="Images/Interstellar.jpg"></h3>
+                    <h3 class="font">Brokeback Mountain<br><img src="Images/BrokebackMountain.jpg"></h3>              
+                </div>
+                <h2 class="font">Favourite Musicals</h2>
+                <div class="gallery">
+                    <h3 class="font">Hamilton<br><img src="images/Hamilton.jpg"></h3>
+                    <h3 class="font">Wicked<br><img src="images/Wicked.jpg"></h3>          
+                </div>
+                <h2 class="font">Favourite TV Shows</h2>
+                <div class="gallery">
+                    <h3 class="font">Gravity Falls<br><img src="images/GravityFalls.jpg"></h3>
+                    <h3 class="font">The Office<br><img src="images/TheOffice.jpg"></h3>
+                    <h3 class="font">Dark Blue Kiss<br><img src="images/DarkBlueKiss.jpg"></h3>              
+                </div>
+            </div>
+            <div id="hobbies" class="dropdownEffect">
+                <h1 class="font">Hobbies</h1>
+                <h3 class="font">My main hobby is to play video games, although I also watch films extensively as a hobby. Some of the video games that I've played are:</h3>
+                <div class="gallery">
+                    <h3 class="font">Oxygen Not Included<br><img src="images/OxygenNotIncluded.jpg"></h3>
+                    <h3 class="font">Dota 2<br><img src="images/Dota2.jpg"></h3>      
+                    <h3 class="font">Albion Online<br><img src="images/AlbionOnline.jpg"></h3>
+                    <h3 class="font">Terraria<br><img src="images/Terraria.jfif"></h3>
+                </div>
+            </div>
+        </div>
+	</body>
+    <footer>
+        <div id="footbar">
+            <div class="font">
+                Follow me on:
+                <a href="https://twitter.com/CarloMinano">Twitter</a>
+                <a href="https://www.facebook.com/Crufixs">Facebook</a>
+                <a href="https://www.instagram.com/crufixs">Instagram</a>
+            </div> 
+        </div> 
+    </footer>
+</html>
